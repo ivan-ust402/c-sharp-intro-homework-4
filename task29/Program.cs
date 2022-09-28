@@ -9,7 +9,7 @@
 - Внутри функций (кроме функции вывода) НЕЛЬЗЯ использовать класс Console. Только в основном блоке кода или в функции вывода
 */
 Console.Clear();
-Console.WriteLine("Вы находитесь в программе, которая задаёт массив из 8 элементов и выводит их на экран. Для продолжения нажмите Enter...");
+Console.WriteLine("Вы находитесь в программе, которая задаёт массив из 8 рандомных элементов и выводит их на экран. Для продолжения нажмите Enter...");
 Console.ReadLine();
 
 int[] array = CreateArray();
@@ -28,9 +28,9 @@ int[] CreateArray() {
 void PrintArray(int[] arr) {
     for (int i = 0; i < array.Length; i++) {
         if 
-            (i == 0) Console.Write($"[ {array[i]}, ");
+            (i == 0) Console.Write($"[{array[i]}, ");
         else if (i == array.Length - 1) 
-            Console.Write($"{array[i]} ]");
+            Console.Write($"{array[i]}]");
         else 
             Console.Write($"{array[i]}, ");        
     }
