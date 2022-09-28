@@ -16,3 +16,14 @@ void CreateArray() {
         arr[i] = elementGen.Next();
     }
 }
+
+void PrintArray(int[] arr) {
+    for (int i = 0; i < array.Length; i++) {
+        if 
+            (i == 0) Console.WriteLine($"[ {array[i]}, ");
+        else if (i == array.Length - 1) 
+            Console.WriteLine($"{array[i]} ]");
+        else 
+            Console.WriteLine($"{array[i]}, ");        
+    }
+}
