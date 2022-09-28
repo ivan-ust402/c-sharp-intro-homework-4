@@ -8,22 +8,30 @@
 - Должна быть отдельная функция, которая создаёт массив и отдельная функция вывода
 - Внутри функций (кроме функции вывода) НЕЛЬЗЯ использовать класс Console. Только в основном блоке кода или в функции вывода
 */
+Console.Clear();
+Console.WriteLine("Вы находитесь в программе, которая задаёт массив из 8 элементов и выводит их на экран. Для продолжения нажмите Enter...");
+Console.ReadLine();
 
-void CreateArray() {
+int[] array = CreateArray();
+PrintArray(array);
+
+
+int[] CreateArray() {
     int[] arr = new int[8];
     Random elementGen = new Random();
     for (int i = 0; i < arr.Length; i++) {
         arr[i] = elementGen.Next();
     }
+    return arr;
 }
 
 void PrintArray(int[] arr) {
     for (int i = 0; i < array.Length; i++) {
         if 
-            (i == 0) Console.WriteLine($"[ {array[i]}, ");
+            (i == 0) Console.Write($"[ {array[i]}, ");
         else if (i == array.Length - 1) 
-            Console.WriteLine($"{array[i]} ]");
+            Console.Write($"{array[i]} ]");
         else 
-            Console.WriteLine($"{array[i]}, ");        
+            Console.Write($"{array[i]}, ");        
     }
 }
